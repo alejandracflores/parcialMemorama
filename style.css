@@ -1,0 +1,156 @@
+/* Estilos generales */
+body {
+    background-color: rgb(154, 212, 255);
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+}
+
+/* Estilos del main */
+main {
+    max-width: 45rem;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Div contenido principal */
+.principal {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0.625rem;
+    border-radius: 0.5rem;
+}
+
+/* Estilos del tablero */
+.inicial {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 850px) {
+    .inicial {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        margin: 0.6rem;
+    }
+
+    main .secundario {
+        padding: 0.62rem;
+        max-width: 20rem;
+        margin-top: 0.5rem;
+    }
+
+    main button {
+        max-height: 4rem;
+        max-width: 4rem;
+        font-size: 2.5rem;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+    }
+
+    main button:hover {
+        cursor: pointer;
+    }
+
+    main #startButton, #resetButton {
+        max-width: 5rem;
+    }
+
+    main .botones {
+        display: flex;
+        margin: 0rem;
+    }
+
+    /* Estilos del footer */
+    main footer {
+        text-align: center;
+        font-size: 8px;
+        margin-top: 0%;
+    }
+}
+
+/* Titulo */
+h1 {
+    text-align: center;
+}
+
+/* Boton */
+button {
+    height: 6.25rem;
+    width: 6.25rem;
+    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#startButton {
+    height: 2.5rem;
+    width: 5rem;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin: 1rem;
+    background-color: rgb(162, 77, 241);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#resetButton {
+    height: 2.5rem;
+    width: 5rem;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin: 1rem;
+    background-color: rgb(241, 83, 77);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.botones {
+    display: flex;
+    margin-top: 1rem;
+}
+
+/* Div contenido secundario */
+.secundario {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 0.5rem;
+    width: 15.625rem;
+    padding: 0 1.25rem;
+    margin-top: 1.25rem;
+    margin-left: 1rem;
+}
+
+/* Estadisticas del juego */
+.estadisticas {
+    border: 0.0625rem solid rgb(255, 255, 255);
+    height: 6.5625rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.25rem;
+    box-sizing: border-box;
+}
+
+/* Estilos del footer */
+footer {
+    text-align: center;
+    font-size: 10px;
+    margin-top: 1rem;
+}
